@@ -1,5 +1,8 @@
 package kh.java.array;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class ArrayTest {
 
 	public static void main(String[] args) {
@@ -9,6 +12,7 @@ public class ArrayTest {
 //		a.test3();
 //		a.test4();
 		a.test5();
+//		a.test6();
 		
 		
 	}
@@ -181,6 +185,19 @@ public class ArrayTest {
 		
 		//nullPointerException
 		//null값에 대해 메소드 호출, 필드값 호출시 발생하는 에러
-		System.out.println(dArr.length);
+//		System.out.println(dArr.length);
+	}
+	
+	public void test6() {
+		String[] str_arr = new String[3];
+		Scanner sc = new Scanner(System.in);
+		System.out.print("1번째 문자열을 입력하세요 : ");
+		str_arr[0]=sc.next();
+		System.out.print("2번째 문자열을 입력하세요 : ");
+		str_arr[1]=sc.next();
+		System.out.print("3번째 문자열을 입력하세요 : ");
+		str_arr[2]=sc.next();
+		
+		System.out.println(Arrays.toString(str_arr));
 	}
 }
