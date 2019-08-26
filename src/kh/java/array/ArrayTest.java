@@ -11,8 +11,8 @@ public class ArrayTest {
 //		a.test2();
 //		a.test3();
 //		a.test4();
-		a.test5();
-//		a.test6();
+//		a.test5();
+		a.test6();
 		
 		
 	}
@@ -198,6 +198,6 @@ public class ArrayTest {
 		System.out.print("3번째 문자열을 입력하세요 : ");
 		str_arr[2]=sc.next();
 		
-		System.out.println(Arrays.toString(str_arr));
+		System.out.println(str_arr);
 	}
 }
